@@ -5,9 +5,13 @@ Home: https://github.com/moble/spherical
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/spherical-feedstock/blob/master/LICENSE.txt)
 
 Summary: Evaluate and transform D matrices, 3-j symbols, and (scalar or spin-weighted) spherical harmonics
+
+Development: https://github.com/moble/spherical
+
+Documentation: https://spherical.readthedocs.io/
 
 This package provides efficient, accurate, and numerically stable code to compute various
 spherical functions and related quantities.  The code is written in pure python, but is
