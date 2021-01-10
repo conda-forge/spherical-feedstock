@@ -1,6 +1,6 @@
 {% set name = "spherical" %}
-{% set version = "0.1.4" %}
-{% set sha256 = "192406bf058fb15185f2786b85282990fa2543bc639d69318efaceb5b2819ea0" %}
+{% set version = "1.0.1" %}
+{% set sha256 = "2fb1e6c4245230484047108cf65ea89161ac7ed91835fc98fcefd8423ad26ff7" %}
 
 package:
   name: {{ name|lower }}
