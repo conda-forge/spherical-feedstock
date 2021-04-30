@@ -1,6 +1,6 @@
 {% set name = "spherical" %}
-{% set version = "1.0.5" %}
-{% set sha256 = "377041a8c210a8d9481a171d65ffb8a6e8fbe23cb776063d785c3f2e745dd06b" %}
+{% set version = "1.0.8" %}
+{% set sha256 = "1931953db54efbe63f1dceda3be3d9c7cc9bfbf209c0ea5b476a6b6997b060e5" %}
 
 package:
   name: {{ name|lower }}
@@ -40,8 +40,8 @@ about:
     This package provides efficient, accurate, and numerically stable code to compute various
     spherical functions and related quantities.  The code is written in pure python, but is
     automatically compiled with numba for greater efficiency.
-  doc_url: https://spherical.readthedocs.io/
   dev_url: https://github.com/moble/spherical
+  doc_url: https://spherical.readthedocs.io/
 
 extra:
   recipe-maintainers:
