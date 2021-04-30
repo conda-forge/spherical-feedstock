@@ -40,8 +40,8 @@ about:
     This package provides efficient, accurate, and numerically stable code to compute various
     spherical functions and related quantities.  The code is written in pure python, but is
     automatically compiled with numba for greater efficiency.
-  doc_url: https://spherical.readthedocs.io/
   dev_url: https://github.com/moble/spherical
+  doc_url: https://spherical.readthedocs.io/
 
 extra:
   recipe-maintainers:
