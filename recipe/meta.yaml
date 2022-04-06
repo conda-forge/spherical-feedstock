@@ -12,19 +12,19 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: /bin/rm -f pyproject.toml && {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
     - pip >=20.0.2
   run:
-    - python >=3.6
-    - numpy >=1.13
-    - scipy >=1.0
-    - numba >=0.50
-    - quaternionic >=0.1.15
+    - python >=3.8
+    - numpy
+    - scipy
+    - numba
+    - quaternionic >=1.0
 
 test:
   imports:
