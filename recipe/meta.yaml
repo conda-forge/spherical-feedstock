@@ -1,6 +1,6 @@
 {% set name = "spherical" %}
-{% set version = "1.0.13" %}
-{% set sha256 = "a4363a3531c47b5f1ff8dd5498e8cbe34e5075036e0160a15c1289ce568e0c8c" %}
+{% set version = "1.0.14" %}
+{% set sha256 = "a9de448a02c84734cd8829ebeca5fe0ade1f6bd249fb081e2cfc1f528499ff2f" %}
 
 package:
   name: {{ name|lower }}
@@ -13,12 +13,13 @@ source:
 build:
   noarch: python
   number: 0
-  script: /bin/rm -f pyproject.toml && {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - python >=3.8
     - pip >=20.0.2
+    - hatchling
   run:
     - python >=3.8
     - numpy
