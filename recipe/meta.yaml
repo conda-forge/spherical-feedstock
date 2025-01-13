@@ -1,6 +1,6 @@
 {% set name = "spherical" %}
-{% set version = "1.0.14" %}
-{% set sha256 = "a9de448a02c84734cd8829ebeca5fe0ade1f6bd249fb081e2cfc1f528499ff2f" %}
+{% set version = "1.0.15" %}
+{% set sha256 = "1c1e7bf3821ec639196865d50afecdeab05733f73b61d352e348eb29b3644765" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
