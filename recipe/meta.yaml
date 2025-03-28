@@ -1,6 +1,12 @@
 {% set name = "spherical" %}
 {% set version = "1.0.16" %}
 {% set sha256 = "16040ea9ad4ce3438e4437456b3ec5e6f9f988828587f0ebf14efa139bbe8510" %}
+{% set python_min = "3.10" %}
+
+# See https://conda-forge.org/docs/maintainer/knowledge_base/#noarch-python for the reason we
+# *can* set `python_min` here and https://github.com/conda-forge/cfep/blob/main/cfep-25.md
+# for what `python_min` actually means.  I have to do this because conda-forge still supports
+# python 3.9, but sxs only supports >=3.10.
 
 package:
   name: {{ name|lower }}
