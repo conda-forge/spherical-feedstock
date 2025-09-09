@@ -1,6 +1,6 @@
 {% set name = "spherical" %}
-{% set version = "1.0.16" %}
-{% set sha256 = "16040ea9ad4ce3438e4437456b3ec5e6f9f988828587f0ebf14efa139bbe8510" %}
+{% set version = "1.0.18" %}
+{% set sha256 = "cd1ea04957e50fa35105d2a019080d9475a09187fab70c386f459b19d1edbfa4" %}
 {% set python_min = "3.10" %}
 
 # See https://conda-forge.org/docs/maintainer/knowledge_base/#noarch-python for the reason we
