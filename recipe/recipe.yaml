@@ -1,0 +1,53 @@
+schema_version: 1
+
+context:
+  version: "1.0.18"
+
+package:
+  name: spherical
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/s/spherical/spherical-${{ version }}.tar.gz
+  sha256: cd1ea04957e50fa35105d2a019080d9475a09187fab70c386f459b19d1edbfa4
+
+build:
+  number: 1
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - hatchling
+    - pip
+  run:
+    - python >=${{ python_min }}
+    - numpy >=1.20
+    - scipy >=1.5
+    - numba >=0.55
+    - quaternionic >=1.0
+    - if: not win
+      then:
+        - __unix
+        - spinsfast >=104.2020.8
+
+tests:
+  - python:
+      imports:
+        - spherical
+      pip_check: true
+      python_version:
+        - ${{ python_min }}
+        - "*"
+
+about:
+  summary: Evaluate and transform D matrices, 3-j symbols, and (scalar or spin-weighted) spherical harmonics
+  license: MIT
+  license_file: LICENSE
+  homepage: https://github.com/moble/spherical
+  documentation: https://spherical.readthedocs.io/
+
+extra:
+  recipe-maintainers:
+    - moble
