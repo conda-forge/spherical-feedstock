@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "1.0.18"
+  version: "1.1.0"
 
 package:
   name: spherical
@@ -9,10 +9,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/s/spherical/spherical-${{ version }}.tar.gz
-  sha256: cd1ea04957e50fa35105d2a019080d9475a09187fab70c386f459b19d1edbfa4
+  sha256: 17a069f788c3989e0c8b244ff9c765fabedb6cb279cf10d6d7bccfb820e401d9
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
