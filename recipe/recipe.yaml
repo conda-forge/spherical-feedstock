@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "1.1.1"
+  version: "1.1.2"
 
 package:
   name: spherical
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/s/spherical/spherical-${{ version }}.tar.gz
-  sha256: 2828402f056b96d7a215af8bf32b6eebdfd1a9c878c7e38e6f17a00ac797c419
+  sha256: 0dcf9b2963650c79c1c48fa6312af135eb0f8222c09cc927d17c8116dd58ba60
 
 build:
   number: 0
